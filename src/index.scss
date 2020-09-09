@@ -1,0 +1,67 @@
+// --------------------
+// Definition of variables
+$primary: #32c3ff;
+
+// ----------------------------------------
+// To install Boostrap:
+// 1) Run in the client folder: $ npm i bootstrap
+// 2) Import bootstrap with the following line
+// @import 'bootstrap/scss/bootstrap';
+// ----------------------------------------
+
+// --------------------
+// Style reusable for all components
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  li {
+    list-style-type: none;
+  }
+}
+.App {
+  text-align: center;
+  .App-header {
+    background-color: $primary;
+    padding: 20px;
+    color: white;
+
+    a {
+      color: white;
+      padding: 0 5px;
+      text-decoration: unset;
+    }
+    a.active {
+      font-weight: bold;
+    }
+  }
+  .App-title {
+    font-size: 1.5em;
+  }
+
+  .Home {
+    .search-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .search-form > * {
+      margin: 0.3rem;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .Tournaments,
+  .Search,
+  .Series {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .box {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+  }
+}
